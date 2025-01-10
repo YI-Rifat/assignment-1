@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Fira Sans;
+    cursor: default;
 }
 /* -------------------------------- */
 /* Reusable Components */
@@ -17,12 +18,19 @@
 body{
     background-color: rgb(245, 245, 245);
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
+    max-width: 1440px;
     padding: 0 136px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 section{
     margin-bottom: 65px;
 }
@@ -49,10 +57,16 @@ button{
 /* -------------------------------- */
 /* Navbar */
 /* -------------------------------- */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 nav{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    max-width: 1440px;
     height: auto;
 }
 nav .container{
@@ -136,8 +150,8 @@ nav .container a:hover button{
     letter-spacing: 2px;
     font-size: 18px;
     box-shadow: 0 0 5px var(--secondary-color),
-            0 0 15px var(--secondary-color),
-            0 0 35px var(--secondary-color);
+                0 0 15px var(--secondary-color),
+                0 0 35px var(--secondary-color);
 }
 .banner .row .col img{
    width: 100%;
@@ -188,5 +202,106 @@ nav .container a:hover button{
     opacity: .7;
 }
 
+/* -------------------------------- */
+/*  Vision Section */
+/* -------------------------------- */
 
+.vision{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.vision h2{
+    font-size: 41px;
+    font-weight: 700;
+    /* margin-bottom: 36px; */
+}
+.vision p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-color);
+    opacity: .7;
+}
+.vision .row{
+    gap: 20px;
+}
+.vision .row .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 27px;
+    width: 345px;
+    height: 276px;
+    border-radius: 14px;
+    transition: background-color 300ms ease-in-out;
+}
+.vision .row .col-1{
+    background-color: rgba(84, 144, 245, 0.2);
+}
+.vision .row .col-2{
+    background-color: rgb(198, 228, 214);
+}
+.vision .row .col-3{
+    background-color: rgb(247, 235, 207);
+}
+.vision .row .col img{
+    width: 43px;
+}
+.vision .row .col button{
+    width: 104px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #fff;
+}
+.vision .row .col-1 button{
+    background: rgb(84, 144, 245);
+}
+.vision .row .col-2 button{
+    background: rgb(9, 161, 92);
+}
+.vision .row .col-3 button{
+    background: rgb(255, 194, 57);
+}
+.vision .row .col-1 button:hover{
+    height: 50px;
+    background: #fff;
+    border: 2px solid rgb(84, 144, 245);
+    color: rgb(84, 144, 245);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgb(84, 144, 245),
+                0 0 15px rgb(84, 144, 245),
+                0 0 35px rgb(84, 144, 245);
+}
+.vision .row .col-2 button:hover{
+    height: 50px;
+    background: #fff;
+    border: 2px solid rgb(9, 161, 92);
+    color: rgb(9, 161, 92);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgb(9, 161, 92),
+                0 0 15px rgb(9, 161, 92),
+                0 0 35px rgb(9, 161, 92);
+}
+.vision .row .col-3 button:hover{
+    height: 50px;
+    background: #fff;
+    border: 2px solid rgb(255, 194, 57);
+    color: rgb(255, 194, 57);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgb(255, 194, 57),
+                0 0 15px rgb(255, 194, 57),
+                0 0 35px rgb(255, 194, 57);
+}
 
