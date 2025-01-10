@@ -19,6 +19,15 @@ body{
 }
 .container{
     padding: 0 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    margin-bottom: 65px;
+}
+main .container{
+    flex-direction: column;
 }
 a{
     text-decoration: none;
@@ -30,6 +39,11 @@ button{
 .btn{
     transition: 300ms ease-in-out;
 
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* -------------------------------- */
@@ -79,9 +93,6 @@ nav .container a:hover button{
     padding: 80px 55px;
 }
 .banner .row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 54px;
 }
 .banner .row .col{
@@ -129,5 +140,53 @@ nav .container a:hover button{
             0 0 35px var(--secondary-color);
 }
 .banner .row .col img{
-    width: 100%;
+   width: 100%;
 }
+
+/* -------------------------------- */
+/*  Pillars Section */
+/* -------------------------------- */
+    
+.pillars h2{
+    font-size: 41px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+.pillars .row{
+    gap: 20px;
+}
+.pillars .row .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    width: 257px;
+    height: 208px;
+    background-color: var(--text-color-3);
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 14px;
+    transition: background-color 300ms ease-in-out;
+}
+.pillars .row .col:hover{
+    background-color: var(--other-color-1);
+}
+.pillars .row .col img{
+    width: 43px;
+}
+.pillars .row .col h4{
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text-color);
+    opacity: .8;
+}
+.pillars .row .col p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-color);
+    opacity: .7;
+}
+
+
+
