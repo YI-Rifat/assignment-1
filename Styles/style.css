@@ -7,6 +7,13 @@
 /* -------------------------------- */
 /* Reusable Components */
 /* -------------------------------- */
+:root{
+    --text-color: rgb(14, 14, 14);
+    --text-color-2: rgba(14, 14, 14, 0.5);
+    --text-color-3: rgb(255, 255, 255);
+    --secondary-color: rgb(0, 106, 80);
+    --other-color-1: rgb(198, 228, 214);
+}
 body{
     background-color: rgb(245, 245, 245);
 }
@@ -22,6 +29,7 @@ button{
 }
 .btn{
     transition: 300ms ease-in-out;
+
 }
 
 /* -------------------------------- */
@@ -42,10 +50,10 @@ nav .container{
 nav .container h3{
     font-size: 32px;
     font-weight: 700;
-    color: rgb(14, 14, 14);
+    color: var(--text-color);
 }
 nav .container button{
-    border: 1px solid rgb(0, 106, 80);
+    border: 1px solid var(--secondary-color);
     border-radius: 8px;
     padding: 13px 26px;
     color: rgb(0, 106, 80);
@@ -53,8 +61,73 @@ nav .container button{
     font-weight: 600;
 }
 nav .container a:hover button{
-    background-color: rgb(0, 106, 80);
+    background-color: var(--secondary-color);
     color: #fff;
     font-size: 20px;
+    padding: 10px 26px;
     letter-spacing: 1px;
+}
+/* -------------------------------- */
+/* Banner Section */
+/* -------------------------------- */
+
+.banner{
+    background-color: var(--other-color-1);
+    width: 1088px;
+    height: 476px;
+    border-radius: 20px;
+    padding: 80px 55px;
+}
+.banner .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 54px;
+}
+.banner .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.banner .row .col-1{
+    width: 529px;
+    gap: 10px;
+}
+.banner .row .col-2{
+    width: 403px;
+}
+.banner .row .col h5{
+    color: var(--text-color-2);
+    font-size: 20px;
+    font-weight: 500;
+}
+.banner .row .col h1{
+    font-size: 48px;
+    color: var(--text-color);
+    line-height: 57px;
+    letter-spacing: 0%;
+}
+.banner .row .col button{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 29px;
+    border-radius: 8px;
+    background: var(--secondary-color);
+    color: var(--text-color-3);
+    border: none;
+}
+.banner .row .col a:hover button{
+    background: var(--other-color-1);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    box-shadow: 0 0 5px var(--secondary-color),
+            0 0 15px var(--secondary-color),
+            0 0 35px var(--secondary-color);
+}
+.banner .row .col img{
+    width: 100%;
 }
