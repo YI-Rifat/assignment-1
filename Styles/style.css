@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fira Sans;
+}
+/* -------------------------------- */
+/* Reusable Components */
+/* -------------------------------- */
+body{
+    background-color: rgb(245, 245, 245);
+}
+.container{
+    padding: 0 136px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.btn{
+    transition: 300ms ease-in-out;
+}
+
+/* -------------------------------- */
+/* Navbar */
+/* -------------------------------- */
+nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(14, 14, 14);
+}
+nav .container button{
+    border: 1px solid rgb(0, 106, 80);
+    border-radius: 8px;
+    padding: 13px 26px;
+    color: rgb(0, 106, 80);
+    font-size: 15px;
+    font-weight: 600;
+}
+nav .container a:hover button{
+    background-color: rgb(0, 106, 80);
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
