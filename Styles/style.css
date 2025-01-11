@@ -547,6 +547,7 @@ nav .container a:hover button{
 }
 .donate .row .col:hover h2{
     color: #fff;
+    font-size: 45px;
 }
 .donate input{
     width: 877px;
