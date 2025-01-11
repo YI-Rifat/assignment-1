@@ -45,9 +45,34 @@ a{
 button{
     cursor: pointer;
 }
+ul, li{
+    text-decoration: none;
+    list-style: none;
+}
 .btn{
     transition: 300ms ease-in-out;
 
+}
+.greenBtn{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+    color: rgb(255, 255, 255);
+    border: navajowhite;
+    border-radius: 8px;
+    padding: 12px 22px;
+    background: rgb(0, 106, 80);
+}
+.greenBtn:hover{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: rgb(0, 106, 80);
+    border: 2px solid rgb(0, 106, 80);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(0, 106, 80),
+                0 0 15px rgb(0, 106, 80),
+                0 0 35px rgb(0, 106, 80);
 }
 .row{
     display: flex;
@@ -414,6 +439,55 @@ nav .container a:hover button{
 /*  News Section */
 /* -------------------------------- */
 
-
-
-
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.news h2{
+    font-size: 41px;
+    font-weight: 700;
+}
+.news p
+/* .news li */
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-color);
+    opacity: .7;
+}
+.news .row{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 27px;
+    padding: 41px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    height: 342px;
+    width: 100%;
+}
+.news .row>img{
+    width: 347px;
+    height: 260px;
+    border-radius: 20px;
+}
+.news .row h3{
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.news .row ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news .row ul li ul{
+    display: flex;
+    flex-direction: row;
+}
+.news .row ul li button{
+    margin-top: 17px;
+}
