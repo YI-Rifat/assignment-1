@@ -555,3 +555,68 @@ nav .container a:hover button{
     font-weight: 400;
     line-height: 21px;
 }
+
+/* -------------------------------- */
+/*  Subscribe Section */
+/* -------------------------------- */
+
+.subscribe{
+    width: 1088px;
+    height: 336px;
+    border-radius: 24px;
+    background: rgb(198, 228, 214);
+    padding: 68px 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.subscribe h2{
+    font-size: 41px;
+    font-weight: 700;
+}
+.subscribe p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-color);
+    opacity: .7;
+}
+.subscribe .box{
+    display: flex;
+    height: 47px;
+    border: 7px;
+}
+.subscribe .box input,
+.subscribe .box button{
+    border: none;
+    height: 100%;
+}
+.subscribe .box input{
+    width: 510px;
+    border-radius: 8px 0px 0px 8px;
+    background: rgb(255, 255, 255);
+    padding: 15px 34px;
+}
+.subscribe .box button{
+    width: 128px;
+    border-radius: 0px 8px 8px 0px;
+    background: rgb(0, 106, 80);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+    transition: 300ms ease-in-out;
+}
+.subscribe .box button:hover{
+    background: rgb(22, 204, 159);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    box-shadow: inset 0 0 5px #000;
+    
+    
+}
+
+
+
